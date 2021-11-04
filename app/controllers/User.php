@@ -41,7 +41,7 @@ class User
         $created = create('users', $validate);
 
         if (!$created) {
-            setFlash('message', 'Ocorreu um erro ao cadastrar, tente novamente em alguns segundo');
+            setFlash('message', 'Ocorreu um erro ao cadastrar, tente novamente em alguns segundos');
             return redirect('/user/create');
         }
 
